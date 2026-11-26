@@ -29,21 +29,6 @@
   footer { margin-top:28px; font-size:13px; color:var(--muted); }
   footer a { color:var(--muted); }
   .actions, .products { display:block; }
-  .proof { margin:0 0 24px; }
-  .stats { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:22px; }
-  .stat { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 14px 12px; }
-  .stat b { display:block; font-size:24px; line-height:1.15; color:var(--brand); letter-spacing:-.01em; }
-  .stat span { display:block; margin-top:4px; font-size:12px; color:var(--muted); line-height:1.4; }
-  .proof-label { margin:0 0 10px; font-size:13px; font-weight:600; color:var(--ink); line-height:1.45; }
-  .proof-label span { font-weight:400; color:var(--muted); }
-  .marquee { overflow:hidden; margin:0 -20px; -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); }
-  .track { display:flex; width:max-content; animation:logos-ltr 32s linear infinite; }
-  .marquee:hover .track { animation-play-state:paused; }
-  .logo { flex:none; width:150px; height:60px; margin-right:10px; background:#fff; border:1px solid var(--line); border-radius:10px; display:flex; align-items:center; justify-content:center; padding:10px 14px; }
-  .logo img { max-width:100%; max-height:32px; object-fit:contain; }
-  .logo.tall img { max-height:46px; }
-  @keyframes logos-ltr { from { transform:translateX(-50%); } to { transform:translateX(0); } }
-  @media (prefers-reduced-motion: reduce) { .track { animation:none; flex-wrap:wrap; width:auto; } .track [aria-hidden] { display:none; } .marquee { -webkit-mask-image:none; mask-image:none; margin:0; } }
   #closed { display:none; background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px; }
   body.is-closed #open { display:none; }
   body.is-closed #closed { display:block; }
@@ -51,15 +36,6 @@
     main { max-width:1040px; padding:56px 32px 56px; }
     h1 { font-size:40px; }
     .tag { font-size:17px; max-width:720px; }
-    .stats { grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:32px; }
-    .stat { padding:20px 20px 16px; }
-    .stat b { font-size:32px; }
-    .stat span { font-size:13px; }
-    .proof { margin-bottom:36px; }
-    .proof-label { font-size:14px; }
-    .marquee { margin:0; }
-    .logo { width:190px; height:72px; margin-right:14px; }
-    .logo img { max-height:36px; }
     .actions { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
     .actions .btn { margin:0; padding:22px 22px; }
     .products { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
@@ -73,82 +49,14 @@
   }
 </style>
 </head>
-<body>
+<body class="is-closed">
 <main>
   <div class="event">Thailand Smart City Expo 2026 · QSNCC Bangkok</div>
   <h1>Sionic AI</h1>
   <p class="tag">Enterprise AI ที่ทำงานภายในเครือข่ายขององค์กร ข้อมูลสำคัญไม่ออกไปภายนอก<br>Secure enterprise AI that runs inside your own network.</p>
 
   <div id="closed"><b>กิจกรรมนี้สิ้นสุดแล้ว / This event page has ended.</b><p>กรุณาเยี่ยมชม <a href="https://www.sionic.ai/th">sionic.ai</a> หรือติดต่อ <a href="mailto:contact@sionic.ai">contact@sionic.ai</a></p></div>
-  <div id="open">
-  <section class="proof">
-    <div class="stats">
-      <div class="stat"><b>KRW 30B+</b><span>Total funding ≈ THB 650M+<br>ระดมทุนสะสมกว่า 650 ล้านบาท</span></div>
-      <div class="stat"><b>67</b><span>Patent applications · 4 countries<br>คำขอสิทธิบัตร 67 รายการ</span></div>
-      <div class="stat"><b>#1</b><span>MTEB · Korean &amp; Japanese retrieval<br>อันดับ 1 ด้านการค้นหาภาษาเกาหลีและญี่ปุ่น</span></div>
-      <div class="stat"><b>4 cities</b><span>Seoul · Tokyo · Singapore · Bangkok<br>สำนักงานใน 4 เมือง</span></div>
-    </div>
-    <p class="proof-label">ได้รับการสนับสนุนจากสถาบันการเงินและกลุ่มเทคโนโลยีชั้นนำของเกาหลี<br><span>Backed by Korea's leading financial and technology groups</span></p>
-    <div class="marquee"><div class="track">
-      <div class="logo"><img src="assets/logos/ibk.png" alt="IBK Industrial Bank of Korea"></div>
-      <div class="logo"><img src="assets/logos/naver-cloud.png" alt="NAVER Cloud"></div>
-      <div class="logo"><img src="assets/logos/samsung-venture.png" alt="Samsung Venture Investment"></div>
-      <div class="logo"><img src="assets/logos/kt-investment.png" alt="kt investment"></div>
-      <div class="logo"><img src="assets/logos/korea-investment-partners.png" alt="Korea Investment Partners"></div>
-      <div class="logo tall"><img src="assets/logos/imm.png" alt="IMM Investment"></div>
-      <div class="logo"><img src="assets/logos/atinum.png" alt="Atinum Investment"></div>
-      <div class="logo"><img src="assets/logos/lb-investment.png" alt="LB Investment"></div>
-      <div class="logo"><img src="assets/logos/partners-investment.png" alt="Partners Investment"></div>
-      <div class="logo"><img src="assets/logos/bsk-investment.png" alt="BSK Investment"></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/ibk.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/naver-cloud.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/samsung-venture.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/kt-investment.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/korea-investment-partners.png" alt=""></div>
-      <div class="logo tall" aria-hidden="true"><img src="assets/logos/imm.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/atinum.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/lb-investment.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/partners-investment.png" alt=""></div>
-      <div class="logo" aria-hidden="true"><img src="assets/logos/bsk-investment.png" alt=""></div>
-    </div></div>
-  </section>
-  <div class="actions">
-  <a class="btn" href="https://www.sionic.ai/th?utm_source=tsce2026&amp;utm_medium=qr&amp;utm_campaign=landing">
-    <b>เยี่ยมชมเว็บไซต์ Sionic AI</b><span>Visit our website</span>
-  </a>
-  <a class="btn alt" href="Sionic_AI_Introduction_en.pdf" download>
-    <b>ดาวน์โหลดเอกสารแนะนำ (PDF)</b><span>Download company &amp; product introduction (EN)</span>
-  </a>
-  <a class="btn alt" href="https://www.sionic.ai/th/contact?utm_source=tsce2026&amp;utm_medium=qr&amp;utm_campaign=meeting">
-    <b>นัดหมายประชุม / ติดต่อเรา</b><span>Request a follow-up meeting</span>
-  </a>
-  </div>
-
-  <h2>Products</h2>
-  <div class="products">
-  <div class="card"><b>OpenGateway</b><p>เชื่อมต่อ LLM หลายตัวผ่าน API เดียว พร้อมกำหนดสิทธิ์ งบประมาณ และ Guardrail ตามทีม<br>One API for many LLMs, with team policies, budgets and guardrails.</p></div>
-  <div class="card"><b>Token Factory</b><p>บริหาร GPU และให้บริการโมเดลภายในองค์กรจากคอนโซลเดียว<br>Run and share LLMs on your own GPUs from one console.</p></div>
-  <div class="card"><b>STORM Agents</b><p>AI Agent สำหรับงานเฉพาะด้าน สร้างและใช้งานได้บนระบบขององค์กร<br>Purpose-built AI agents, deployed on your own infrastructure.</p></div>
-  </div>
-
-  <h2>Site map</h2>
-  <ul class="map">
-    <li><a href="https://www.sionic.ai/th/agents?utm_source=tsce2026&amp;utm_medium=qr">STORM Agents</a></li>
-    <li><a href="https://www.sionic.ai/th/platform?utm_source=tsce2026&amp;utm_medium=qr">STORM Platform</a></li>
-    <li><a href="https://www.sionic.ai/th/parse?utm_source=tsce2026&amp;utm_medium=qr">STORM Parse</a></li>
-    <li><a href="https://www.sionic.ai/th/retrieval?utm_source=tsce2026&amp;utm_medium=qr">STORM Retrieval</a></li>
-    <li><a href="https://www.sionic.ai/th/partners?utm_source=tsce2026&amp;utm_medium=qr">Partners</a></li>
-    <li><a href="https://www.sionic.ai/th/company?utm_source=tsce2026&amp;utm_medium=qr">Company</a></li>
-    <li><a href="https://www.sionic.ai/th/newsroom?utm_source=tsce2026&amp;utm_medium=qr">News</a></li>
-    <li><a href="https://www.sionic.ai/th/contact?utm_source=tsce2026&amp;utm_medium=qr&amp;utm_campaign=sitemap">Contact</a></li>
-  </ul>
-  </div>
-
   <footer>Sionic AI · <a href="mailto:contact@sionic.ai">contact@sionic.ai</a></footer>
 </main>
-<script>
-  // Page closes after 25 Nov 2026 (Bangkok time).
-  if (Date.now() >= Date.parse("2026-11-26T00:00:00+07:00")) document.body.classList.add("is-closed");
-</script>
 </body>
 </html>
